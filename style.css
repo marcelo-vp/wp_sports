@@ -3759,6 +3759,10 @@ object {
 		float: left;
 		width: 36%;
 	}
+	/* Removing the header element from the homepage description article */
+	body.page-two-column:not(.archive) #primary #post-7 .entry-header {
+  	display: none;
+	}
 
 	.blog:not(.has-sidebar) #primary article,
 	.archive:not(.page-one-column):not(.has-sidebar) #primary article,
@@ -3769,6 +3773,10 @@ object {
 	body.page-two-column #comments {
 		float: right;
 		width: 58%;
+	}
+	/* Adjusting the homepage description width */
+	body.page-two-column:not(.archive) #primary #post-7 .entry-content {
+  	width: 100%;
 	}
 
 	.blog .site-main > article,
