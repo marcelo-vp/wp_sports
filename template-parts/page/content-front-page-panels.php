@@ -48,7 +48,7 @@ global $twentyseventeencounter;
 
 			<?php
 			// Show recent blog posts if is blog posts page (Note that get_option returns a string, so we're casting the result as an int).
-			if ( get_the_ID() === (int) get_option( 'page_for_posts' )  ) : ?>
+			if ( get_the_ID() === (int) get_option( 'page_for_posts' )  || get_the_ID() === (int) get_option( 'page_on_front' ) ) : ?>
 
 				<?php // Show four most recent posts.
 				$recent_posts = new WP_Query( array(
