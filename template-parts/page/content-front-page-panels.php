@@ -47,10 +47,10 @@ global $twentyseventeencounter;
 			</div><!-- .entry-content -->
 
 			<?php
-			// Show recent blog posts if is blog posts page (Note that get_option returns a string, so we're casting the result as an int).
-			if ( get_the_ID() === (int) get_option( 'page_for_posts' )  || get_the_ID() === (int) get_option( 'page_on_front' ) ) : ?>
+			// Show recent blog posts if is static front page and inside 'latest news' panel.
+			if ( get_the_ID() === 11 && get_option( 'show_on_front' ) === 'page' ) : ?>
 
-				<?php // Show four most recent posts.
+				<?php // Show three most recent posts.
 				$recent_posts = new WP_Query( array(
 					'posts_per_page'      => 3,
 					'post_status'         => 'publish',
