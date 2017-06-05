@@ -62,7 +62,6 @@ global $twentyseventeencounter;
 		 		<?php if ( $recent_posts->have_posts() ) : ?>
 
 					<div class="recent-posts">
-
 						<?php
 						while ( $recent_posts->have_posts() ) : $recent_posts->the_post();
 							get_template_part( 'template-parts/post/content', 'excerpt' );
@@ -70,8 +69,24 @@ global $twentyseventeencounter;
 						wp_reset_postdata();
 						?>
 					</div><!-- .recent-posts -->
+
 				<?php endif; ?>
+
 			<?php endif; ?>
+
+			<?php
+			// Show calendar events list : widget area + widget
+			if ( get_the_ID() === 49 ) { ?>
+
+				<div class="recent-posts">
+					<?php if ( is_active_sidebar( 'calendar-1' ) ) : ?>
+						<div>
+							<?php dynamic_sidebar( 'calendar-1' ); ?>
+						</div>
+					<?php endif; ?>
+				</div>
+
+			<?php } ?>
 
 		</div><!-- .wrap -->
 	</div><!-- .panel-content -->
