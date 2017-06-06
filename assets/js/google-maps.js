@@ -3,7 +3,7 @@
 function initMap() {
 
 	/* Sets marker location */
-	var location = new google.maps.LatLng( , );
+	var location = new google.maps.LatLng( -23.607576, -46.744729 );
 
 	/* Sets map config */
 	var mapSConfig = {
