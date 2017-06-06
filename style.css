@@ -2283,6 +2283,20 @@ body:not(.twentyseventeen-front-page) .entry-header {
 	margin-bottom: 3em;
 }
 
+/* Contact page */
+
+.google-map {
+	width: 100%;
+	float: left;
+	margin-top: 4.5em;
+}
+#googleMapS {
+	width: 100%;
+	height: 400px;
+	margin-top: 20px;
+	/*background-color: #009688;*/
+}
+
 /*--------------------------------------------------------------
 13.6 Footer
 --------------------------------------------------------------*/
