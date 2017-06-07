@@ -3,24 +3,24 @@
 function initMap() {
 
 	/* Sets marker location */
-	var location = new google.maps.LatLng( -23.607576, -46.744729 );
+	var location = new google.maps.LatLng( -23.607821, -46.744719 );
 
 	/* Sets map config */
-	var mapSConfig = {
+	var mapConfig = {
 		center:location,
 		zoom:15,
 		mapTypeId:google.maps.MapTypeId.ROADMAP,
-		draggable:false,
+		draggable:true,
 		scrollwheel:false
 	};
 
 	/* Create map based on config and insert content in the DOM using the element's ID */
-	var mapSmall = new google.maps.Map(document.getElementById("googleMapS"),mapSConfig);
+	var googleMap = new google.maps.Map(document.getElementById("google-map"),mapConfig);
 
 	/* Create a marker and choose a map to place it in */
-	var markerS = new google.maps.Marker({
+	var krMarker = new google.maps.Marker({
 		position:location,
-		map:mapSmall
+		map:googleMap
 	});
 		
 }

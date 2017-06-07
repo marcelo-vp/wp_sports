@@ -27,10 +27,10 @@ get_header(); ?>
 			endwhile; // End of the loop.
 			?>
 
-			<!-- Google Maps API -->
-			<article class="google-map">
+			<!-- Google Map -->
+			<article id="mapa">
 				<strong>Mapa</strong>
-				<div id="googleMapS"></div>
+				<div id="google-map"></div>
 			</article>
 
 		</main><!-- #main -->
