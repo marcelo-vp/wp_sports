@@ -66,10 +66,19 @@ function initMap() {
 	/* Create map based on config and insert content in the DOM using the element's ID */
 	var googleMap = new google.maps.Map(document.getElementById("google-map"),mapConfig);
 
-	/* Create a marker and choose a map to place it in */
+	/*Create a custom marker image */
+	var customMarker = {
+		url: 'http://localhost/wordpress/wp-content/themes/tucano_sports/assets/images/custom-marker.png',
+		scaledSize: new google.maps.Size( 35, 49.88 ),
+		origin: new google.maps.Point( 0, 0 ),
+		anchor: new google.maps.Point( 17.5, 49.88 )
+	};
+
+	/* Create a custom marker and choose a map to place it in */
 	var krMarker = new google.maps.Marker({
 		position:location,
-		map:googleMap
+		map:googleMap,
+		icon: customMarker
 	});
 		
 }
