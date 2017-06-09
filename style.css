@@ -2414,6 +2414,14 @@ a.tribe-events-gcal, a.tribe-events-ical {
   padding-right: 40px;
 }
 
+.tribe-events-day .tribe-events-day-time-slot .type-tribe_events {
+  margin-left: 0;
+}
+
+.tribe-events-day .tribe-events-day-time-slot h5 {
+	margin-bottom: 8px;
+}
+
 /*--------------------------------------------------------------
 13.6 Footer
 --------------------------------------------------------------*/
@@ -4021,7 +4029,7 @@ object {
 		width: 100%;
 	}
 
-	.has-sidebar.events-list #primary {
+	.has-sidebar.events-list #primary, .has-sidebar.tribe-events-day #primary {
 		width: 60%;
 		float: none;
 		margin: 0 auto;
