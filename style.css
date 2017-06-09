@@ -2370,7 +2370,11 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 .tribe-events-loop .tribe-events-event-meta {
-  margin-top: 0;
+  margin: 0 0 26px;
+}
+
+#tribe-events .tribe-events-content p {
+  margin-bottom: 0;
 }
 
 .tribe-events-list .tribe-events-venue-details, .tribe-events-list .tribe-event-schedule-details {
@@ -2388,12 +2392,12 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 .tribe-events-list .tribe-events-loop .tribe-event-featured .tribe-events-content, 
+.tribe-events-list .tribe-events-loop .tribe-event-featured .tribe-events-list-event-description a, 
 #tribe-events-content .tribe-event-featured a:hover {
   color: #fff;
 }
 
-.tribe-events-list .tribe-events-loop .tribe-event-featured .tribe-events-event-meta, 
-.tribe-events-list .tribe-events-loop .tribe-event-featured a {
+.tribe-events-list .tribe-events-loop .tribe-event-featured .tribe-events-event-meta {
   color: hsla(0,0%,100%,.85);
 }
 
