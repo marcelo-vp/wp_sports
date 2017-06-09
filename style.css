@@ -2355,6 +2355,60 @@ body:not(.twentyseventeen-front-page) .entry-header {
   line-height: 1.5;
 }
 
+.tribe-events-list-separator-month {
+  margin-bottom: 8px;
+  padding-left: 12px;
+}
+
+.tribe-events-list .tribe-events-loop .tribe-event-featured {
+  padding-bottom: 36px;
+}
+
+.tribe-events-list .tribe-events-loop .tribe-event-featured .tribe-events-list-event-title {
+  margin-top: 0;
+  padding-top: 1.2em;
+}
+
+.tribe-events-loop .tribe-events-event-meta {
+  margin-top: 0;
+}
+
+.tribe-events-list .tribe-events-venue-details, .tribe-events-list .tribe-event-schedule-details {
+  line-height: 1.5;
+}
+
+.tribe-events-list .tribe-event-schedule-details {
+  margin-bottom: 8px;
+}
+
+#tribe-events-content .tribe-event-featured a {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  text-decoration: underline;
+}
+
+.tribe-events-list .tribe-events-loop .tribe-event-featured .tribe-events-content, 
+#tribe-events-content .tribe-event-featured a:hover {
+  color: #fff;
+}
+
+.tribe-events-list .tribe-events-loop .tribe-event-featured .tribe-events-event-meta, 
+.tribe-events-list .tribe-events-loop .tribe-event-featured a {
+  color: hsla(0,0%,100%,.85);
+}
+
+a.tribe-events-gcal, a.tribe-events-ical {
+  margin-bottom: 20px;
+}
+
+.events-list #tribe-events-footer, .tribe-events-day #tribe-events-footer {
+  display: none;
+}
+
+#tribe-bar-collapse-toggle {
+  padding-right: 40px;
+}
+
 /*--------------------------------------------------------------
 13.6 Footer
 --------------------------------------------------------------*/
@@ -3962,6 +4016,12 @@ object {
 		width: 100%;
 	}
 
+	.has-sidebar.events-list #primary {
+		width: 60%;
+		float: none;
+		margin: 0 auto;
+	}
+
 	/* 404 page */
 
 	.error404 .page-content {
@@ -4155,6 +4215,18 @@ object {
 	.admin-bar .site-navigation-hidden.navigation-top {
 		top: 46px;
 	}
+}
+
+/* Events calendar adjustments */
+@media screen and ( max-width: 768px ) {
+
+	.tribe-events-loop .tribe-events-event-meta {
+		background: none;
+	}
+	.tribe-events-list .tribe-event-schedule-details {
+		padding-left: 12px;
+	}
+
 }
 
 /*--------------------------------------------------------------
