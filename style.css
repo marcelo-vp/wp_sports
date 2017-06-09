@@ -2397,7 +2397,8 @@ body:not(.twentyseventeen-front-page) .entry-header {
   color: #fff;
 }
 
-.tribe-events-list .tribe-events-loop .tribe-event-featured .tribe-events-event-meta {
+.tribe-events-list .tribe-events-loop .tribe-event-featured .tribe-events-event-meta, 
+.tribe-events-list .tribe-events-loop .tribe-event-featured .tribe-events-event-meta a {
   color: hsla(0,0%,100%,.85);
 }
 
