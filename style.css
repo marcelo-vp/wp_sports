@@ -2422,6 +2422,50 @@ a.tribe-events-gcal, a.tribe-events-ical {
 	margin-bottom: 8px;
 }
 
+.tribe-events-single h2 {
+	font-size: 24px;
+}
+
+.tribe-events-single #tribe-events-header {
+  margin: 0 0 10px;
+}
+
+.tribe-events-single .tribe-events-back {
+  margin-bottom: 36px;
+}
+
+.tribe-events-single .tribe-events-schedule {
+  margin-top: 16px;
+}
+
+.tribe-events-single .tribe-events-event-image {
+  margin-bottom: 20px;
+}
+
+.tribe-events-event-meta.primary .tribe-events-meta-group {
+  width: 50%;
+}
+
+.tribe-events-event-meta.secondary .tribe-events-meta-group-venue {
+  width: 100%;
+}
+
+.tribe-events-event-meta.secondary .tribe-events-venue-map {
+  width: 90%;
+}
+
+.single-tribe_events .tribe-events-venue-map {
+  margin: 20px 5%;
+}
+
+.single-tribe_events .tribe-events-event-meta dl {
+  font-size: 14px;
+}
+
+.single-tribe_events .tribe-events-event-meta dt {
+  margin-bottom: 3px;
+}
+
 /*--------------------------------------------------------------
 13.6 Footer
 --------------------------------------------------------------*/
@@ -4029,10 +4073,14 @@ object {
 		width: 100%;
 	}
 
-	.has-sidebar.events-list #primary, .has-sidebar.tribe-events-day #primary {
+	.has-sidebar.events-list #primary, .has-sidebar.tribe-events-day #primary, .has-sidebar.events-single #primary {
 		width: 60%;
 		float: none;
 		margin: 0 auto;
+	}
+
+	.events-single .site-content {
+		padding-top: 3.5em;
 	}
 
 	/* 404 page */
@@ -4231,13 +4279,49 @@ object {
 }
 
 /* Events calendar adjustments */
+
+@media screen and ( max-width: 450px ) {
+
+	.tribe-events-event-meta.primary .tribe-events-meta-group {
+		width: 100%;
+	}
+
+	.tribe-events-event-meta.primary .tribe-events-meta-group.tribe-events-meta-group-organizer {
+		margin-top: 20px;
+	}
+
+}
+
+@media screen and ( min-width: 451px ) {
+
+	.tribe-events-event-meta.primary .tribe-events-meta-group {
+		float: left;
+	}
+
+	.tribe-events-event-meta.primary .tribe-events-meta-group.tribe-events-meta-group-organizer {
+		margin-top: 0;
+	}
+
+}
+
 @media screen and ( max-width: 768px ) {
 
 	.tribe-events-loop .tribe-events-event-meta {
 		background: none;
 	}
+
 	.tribe-events-list .tribe-event-schedule-details {
 		padding-left: 12px;
+	}
+
+	a.tribe-events-gmap {
+		display: inline-block;
+	}
+
+	.single-tribe_events .tribe-events-schedule {
+		background: none;
+		border: none;
+		padding: 0;
 	}
 
 }
