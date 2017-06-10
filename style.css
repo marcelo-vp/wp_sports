@@ -2501,12 +2501,16 @@ a.tribe-events-gcal, a.tribe-events-ical {
 /* Footer widgets */
 
 .site-footer .widget-area {
-	padding-bottom: 2em;
 	padding-top: 2em;
+	padding-bottom: 0;
 }
 
 .footer-widget-2 .textwidget p {
-  margin-bottom: 0.8em;
+  margin-bottom: 0.5em;
+}
+
+.site-footer .widget-area #text-4 {
+	padding-bottom: 2.5em;
 }
 
 /* Social nav */
@@ -2549,6 +2553,10 @@ a.tribe-events-gcal, a.tribe-events-ical {
 	top: 12px;
 	width: 16px;
 	vertical-align: top;
+}
+
+.site-footer .widget-title.social-media {
+	padding-top: 0;
 }
 
 /* Site info */
