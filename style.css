@@ -1855,6 +1855,25 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 	display: none;
 }
 
+.home .post-49 .entry-content {
+	margin-bottom: 30px;
+}
+
+.home .post-49 .tribe-events-list-widget-events .tribe-event-title {
+	padding-top: 0;
+	margin-bottom: 0.4rem;
+}
+
+.home .post-49 .tribe-events-list-widget .tribe-event-featured {
+	padding-bottom: 1.4rem;
+}
+
+.home .post-49 .tribe-events-list-widget .tribe-event-featured .tribe-event-title a {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  text-decoration: underline;
+}
+
 /*--------------------------------------------------------------
 13.3 Regular Content
 --------------------------------------------------------------*/
