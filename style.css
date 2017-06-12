@@ -2513,6 +2513,10 @@ a.tribe-events-gcal, a.tribe-events-ical {
 	padding-bottom: 2.5em;
 }
 
+.site-footer .widget-area #text-4 .textwidget p:first-child a {
+  line-height: 2;
+}
+
 /* Social nav */
 
 .social-navigation {
@@ -4185,7 +4189,7 @@ object {
 		width: 58%;
 	}
 
-	.social-navigation {
+	.social-menu {
 		clear: left;
 		float: left;
 		margin-bottom: 0;
