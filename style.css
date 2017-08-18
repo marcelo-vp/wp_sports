@@ -1886,6 +1886,23 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 .site-content {
 	padding: 2.5em 0 0;
 }
+.page-id-55 button.link {
+  padding: 0;
+}
+.page-id-55 button.link a {
+  display: block;
+  padding: 1em 2em;
+  color: #fff;
+}
+.page-id-55 .entry-content button.link a:hover,
+.page-id-55 .entry-content button.link a:focus {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  color: #fff;
+}
+.page-id-55 .entry-content button.link a:hover {
+  color: #fff;
+}
 
 /*--------------------------------------------------------------
 13.4 Posts
