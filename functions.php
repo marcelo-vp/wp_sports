@@ -466,10 +466,15 @@ function twentyseventeen_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 	
-	/* Enabling Google Maps API for contact page */
+	// Enabling Google Maps API for contact page
 	if ( is_page( 'contato' ) ) {
 		wp_enqueue_script( 'google-maps-api', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDnzQpNe1LnsQyYZSpvSunIgLQUagtHhdw&callback=initMap', array(), '1.0.0', true );
 		wp_enqueue_script( 'google-map', get_theme_file_uri( '/assets/js/google-maps.js' ), true );
+	}
+	
+	// Open link in new tab/window
+	if ( is_page( 'parceiros' ) ) {
+		wp_enqueue_script( 'link-target', get_theme_file_uri( '/assets/js/link-target.js' ), true );
 	}
 
 }
